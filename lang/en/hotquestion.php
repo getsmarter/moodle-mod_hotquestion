@@ -129,3 +129,9 @@ $string['userid'] = 'Userid';
 $string['vote'] = 'Vote';
 $string['viewallentries'] = '{$a->ucount} user(s) posted {$a->qcount} question(s).';
 $string['viewentries'] = 'Participation in current round';
+
+$string['previousround_label'] = 'Previous round';
+$string['nextround_label'] = 'Next round';
+$string['addround_label'] = 'Add round';
+$string['removeround_label'] = 'Remove round';
+
