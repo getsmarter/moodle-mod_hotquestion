@@ -98,7 +98,7 @@ M.modHotquestion.refresh = function(e) {
 
 M.modHotquestion.getquestion = function() {
     var question = M.modHotquestion.questionbox.get('value');
-    return trim(question);
+    return question.trim();
 };
 
 M.modHotquestion.questionchanged = function(e) {

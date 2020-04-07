@@ -99,7 +99,7 @@ if (!$ajax) {
         )
     );
 
-    $PAGE->requires->js_init_call('M.mod_hotquestion.init', null, true, $jsmodule);
+    $PAGE->requires->js_init_call('M.modHotquestion.init', null, true, $jsmodule);
 }
 
 require_capability('mod/hotquestion:view', $context);
