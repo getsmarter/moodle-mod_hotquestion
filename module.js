@@ -48,7 +48,7 @@ M.modHotquestion.init = function(Y) {
 
     // Bind toolbar buttons.
     Y.on('click', M.modHotquestion.refresh, '.hotquestion_vote');
-    Y.on('click', M.modHotquestion.refresh, '.toolbutton');
+    Y.on('click', M.modHotquestion.refresh, '.toolbutton.refresh');
 
     // Bind io events.
     Y.on('io:success', M.modHotquestion.iocomplete);
@@ -71,7 +71,7 @@ M.modHotquestion.iocomplete = function(transactionid, response, arguments) {
 
     // Rebind buttons.
     Y.on('click', M.modHotquestion.refresh, '.hotquestion_vote');
-    Y.on('click', M.modHotquestion.refresh, '.toolbutton');
+    Y.on('click', M.modHotquestion.refresh, '.toolbutton.refresh');
 };
 
 M.modHotquestion.iofailure = function(transactionid, response, arguments) {
