@@ -44,10 +44,8 @@ M.modHotquestion.init = function(Y) {
     if (M.modHotquestion.getquestion() == '') {
         M.modHotquestion.submitbutton.set('disabled', 'disabled');
     }
-    Y.on("submit", M.modHotquestion.submit, '#mform1');
 
-    // Bind toolbar buttons.
-    Y.on('click', M.modHotquestion.refresh, '.hotquestion_vote');
+    Y.on("submit", M.modHotquestion.submit, '#mform1');
     Y.on('click', M.modHotquestion.refresh, '.toolbutton.refresh');
 
     // Bind io events.
@@ -69,8 +67,6 @@ M.modHotquestion.iocomplete = function(transactionid, response, arguments) {
         M.modHotquestion.submitbutton.set('disabled', 'disabled');
     }
 
-    // Rebind buttons.
-    Y.on('click', M.modHotquestion.refresh, '.hotquestion_vote');
     Y.on('click', M.modHotquestion.refresh, '.toolbutton.refresh');
 };
 
